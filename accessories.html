@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Аксессуары — каталог</title>
+<meta name="description" content="Аксессуары — товары и аксессуары">
+<meta property="og:title" content="Аксессуары — каталог">
+<meta property="og:description" content="Аксессуары — товары и аксессуары">
+<meta property="og:image" content="assets/img/placeholder-banner.png">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-breadcrumbs="Главная | Каталог | Аксессуары">
+<main class="container">
+
+<section id="brand-page" data-brand="Аксессуары">
+  <img src="assets/img/placeholder-banner.png" alt="Аксессуары" loading="lazy" style="border-radius:20px;margin:16px 0">
+  <div class="filters">
+    <label>Сортировка:
+      <select id="sort" class="select">
+        <option>По умолчанию</option>
+      </select>
+    </label>
+    <div class="chips"><button class="chip" data-cat="Смартфоны" type="button">Смартфоны</button><button class="chip" data-cat="Часы" type="button">Часы</button><button class="chip" data-cat="Наушники" type="button">Наушники</button><button class="chip" data-cat="Прочее" type="button">Прочее</button></div>
+  </div>
+  <div id="list" class="grid"></div>
+</section>
+
+</main>
+<script src="js/data.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/app.js"></script>
+<script src="js/render.js"></script>
+</body></html>

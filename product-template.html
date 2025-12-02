@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Шаблон товара — Golden Electronics</title>
+<meta name="description" content="Пример страницы одного товара">
+<meta property="og:title" content="Шаблон товара — Golden Electronics">
+<meta property="og:description" content="Пример страницы одного товара">
+<meta property="og:image" content="assets/img/placeholder-banner.png">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body data-breadcrumbs="Главная | Каталог | Товар">
+<main class="container">
+
+<section>
+  <div class="grid" style="grid-template-columns:1fr 1fr">
+    <div class="card">
+      <img src="../assets/img/placeholder-product.png" alt="Фото товара" style="height:360px;object-fit:contain;border-radius:16px;background:#0a0a0a">
+      <div class="chips" style="margin-top:12px">
+        <img src="../assets/img/placeholder-product.png" alt="" style="width:80px;border-radius:12px;background:#0a0a0a">
+        <img src="../assets/img/placeholder-product.png" alt="" style="width:80px;border-radius:12px;background:#0a0a0a">
+        <img src="../assets/img/placeholder-product.png" alt="" style="width:80px;border-radius:12px;background:#0a0a0a">
+      </div>
+    </div>
+    <div>
+      <h1 data-field="title">Название товара</h1>
+      <div class="product__price" data-field="price">99 990 ₽</div>
+      <ul class="card" style="padding:16px" data-field="specs">
+        <li>Характеристика 1</li>
+        <li>Характеристика 2</li>
+        <li>Характеристика 3</li>
+      </ul>
+      <button class="btn btn--primary" data-add-to-cart data-id="__id__">В корзину</button>
+    </div>
+  </div>
+</section>
+
+</main>
+<script src="../js/data.js"></script>
+<script src="../js/utils.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/render.js"></script>
+</body></html>

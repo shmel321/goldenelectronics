@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Все товары — Golden Electronics</title>
+<meta name="description" content="Каталог с фильтрами, поиском и пагинацией">
+<meta property="og:title" content="Все товары — Golden Electronics">
+<meta property="og:description" content="Каталог с фильтрами, поиском и пагинацией">
+<meta property="og:image" content="assets/img/placeholder-banner.png">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-breadcrumbs="Главная | Каталог">
+<main class="container">
+
+<section id="catalog-page">
+  <h1>Каталог товаров</h1>
+  <div class="filters">
+    <label>Сортировка:
+      <select id="sort" class="select">
+        <option value="priceAsc">По цене ↑</option>
+        <option value="priceDesc">По цене ↓</option>
+        <option value="newest">По новизне</option>
+        <option value="popular">Популярные</option>
+      </select>
+    </label>
+    <input id="search" class="input" placeholder="Поиск по названию…" aria-label="Поиск">
+    <input id="min" class="input input--range" type="number" placeholder="Мин цена">
+    <input id="max" class="input input--range" type="number" placeholder="Макс цена">
+  </div>
+  <div class="filters" id="brands"></div>
+  <div class="filters" id="cats"></div>
+  <div id="list" class="grid"></div>
+  <div id="pagination" class="pagination"></div>
+</section>
+<script>
+document.addEventListener('DOMContentLoaded', ()=>{
+  const brands = GE_DATA.brands.map(b=>`<label class="chip"><input type="checkbox" value="${b}" style="margin-right:6px">${b}</label>`).join('');
+  document.getElementById('brands').innerHTML = brands;
+  const cats = GE_DATA.categories.map(c=>`<label class="chip"><input type="checkbox" value="${c}" style="margin-right:6px">${c}</label>`).join('');
+  document.getElementById('cats').innerHTML = cats;
+});
+</script>
+
+</main>
+<script src="js/data.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/app.js"></script>
+<script src="js/render.js"></script>
+</body></html>
