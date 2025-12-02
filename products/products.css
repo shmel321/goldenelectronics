@@ -1,0 +1,27 @@
+
+/* Scoped to product pages (files under /products) */
+.product-card{
+  background:#0f0f0f;
+  border:1px solid #1a1a1a;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.03);
+  padding:16px;
+}
+.product-title{font-size:22px;margin:10px 0 8px}
+.product-price{font-size:24px;font-weight:800;margin:8px 0 12px;color:#fff}
+
+/* Order-inline buttons (uses your exact markup) */
+.order-inline{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.order-inline .social-btn{display:flex;align-items:center;gap:8px;justify-content:center;padding:10px 12px;border-radius:12px;background:#0f0f0f;border:1px solid #151515;transition:transform .15s, background .15s, border-color .15s}
+.order-inline .social-btn:hover{transform:translateY(-1px);background:#141414;border-color:#1f1f1f}
+.order-inline img{border-radius:6px}
+
+/* Lightbox */
+.lb{position:fixed;inset:0;display:none;align-items:center;justify-content:center;z-index:9999}
+.lb--open{display:flex}
+.lb__backdrop{position:absolute;inset:0;background:rgba(0,0,0,.75)}
+.lb__content{position:relative;max-width:min(90vw,1100px);max-height:90vh;display:flex;align-items:center;gap:12px}
+.lb__img{max-width:100%;max-height:90vh;border-radius:12px;box-shadow:0 10px 40px rgba(0,0,0,.5)}
+.lb__nav{background:#0b0b0b;border:1px solid #1a1a1a;color:#fff;border-radius:10px;padding:8px 12px;font-weight:700;cursor:pointer;opacity:.9}
+.lb__nav:hover{opacity:1}
+.lb__close{position:absolute;top:-44px;right:0;background:#0b0b0b;border:1px solid #1a1a1a;color:#fff;border-radius:10px;padding:6px 10px;font-weight:700;cursor:pointer}
