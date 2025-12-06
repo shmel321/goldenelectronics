@@ -69,7 +69,7 @@ window.GE_DATA = {
       "category": "Часы",
       "title": "Smart Watch S11 42mm",
       "price": 4990,
-      "img": "s11_46mm_1_2.png",
+      "img": "s11_42mm_1.png",
       "popular": false
     },
     {
@@ -160,6 +160,15 @@ window.GE_DATA = {
       "title": "Набор расчески + заколки 7в1",
       "price": 2990,
       "img": "7v1_1.png",
+      "popular": false
+    },
+    {
+      "id": "a19",
+      "brand": "Dyson",
+      "category": "Выпрямители",
+      "title": "Dyson Airstrait HT01",
+      "price": 9990,
+      "img": "ht01_1.png",
       "popular": true
     },
 
