@@ -6,7 +6,7 @@ window.GE_DATA = {
       "category": "Наушники",
       "title": "Air Pro 2 Premium",
       "price": 2990,
-      "img": "airpodspro2_1.png",
+      "img": "airpodspro2_1_1.png",
       "popular": false
     },
     {
@@ -15,7 +15,7 @@ window.GE_DATA = {
       "category": "Наушники",
       "title": "Air Pro 2 FCO 3.0",
       "price": 7990,
-      "img": "airpodspro2_3.png",
+      "img": "airpodspro2_2_1.png",
       "popular": true
     },
     {
@@ -42,7 +42,7 @@ window.GE_DATA = {
       "category": "Наушники",
       "title": "Аir 4 ANC 1571АM",
       "price": 5990,
-      "img": "airpods4_1_2.png",
+      "img": "airpods4_2_1.png",
       "popular": false
     },
     {
@@ -88,7 +88,7 @@ window.GE_DATA = {
       "title": "Dyson Supersonic HD08",
       "price": 6990,
       "img": "hd08_1.png",
-      "popular": false
+      "popular": true
     },
     {
       "id": "a11",
@@ -169,6 +169,24 @@ window.GE_DATA = {
       "title": "Dyson Airstrait HT01",
       "price": 9990,
       "img": "ht01_1.png",
+      "popular": true
+    },
+    {
+      "id": "a20",
+      "brand": "Dyson",
+      "category": "Выпрямители",
+      "title": "Dyson Airstrait HT01",
+      "price": 9990,
+      "img": "ht01_2_1.png",
+      "popular": true
+    },
+    {
+      "id": "a21",
+      "brand": "Dyson",
+      "category": "Выпрямители",
+      "title": "Dyson Airstrait HT01",
+      "price": 9990,
+      "img": "ht01_3_1.png",
       "popular": true
     },
 
